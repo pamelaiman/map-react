@@ -18,7 +18,7 @@ export default function MapPractice2() {
     return (
         <div className="mapPractice">
             <h2>Pamela's Movie List</h2>
-            <button onClick={regenerate}>Click to see a different movie</button>
+            <button onClick={regenerate}>Click to see a different movie list</button>
             <div className="movieList">
                 {movies.map(showMovies)}
             </div>

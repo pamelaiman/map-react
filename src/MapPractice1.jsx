@@ -3,7 +3,7 @@ import { useEmojiGenerator } from "./useEmojiGenerator";
 export default function MapPractice1() {
     const emojisArray = useEmojiGenerator();
     // console.log("emojisArray", emojisArray);
-
+     
     return (
         <div className="mapPractice">
             <h2>Pamela's Emojis</h2>

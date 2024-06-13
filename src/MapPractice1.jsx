@@ -2,13 +2,20 @@ import { useEmojiGenerator } from "./useEmojiGenerator";
 
 export default function MapPractice1() {
     const emojisArray = useEmojiGenerator();
-    console.log("emojisArray", emojisArray);
+    // console.log("emojisArray", emojisArray);
 
     return (
         <div className="mapPractice">
-            <h2>Map Practice 1</h2>
+            <h2>Pamela's Emojis</h2>
             <div className="emojiList">
-                This is where your emojis need to go! (See expected1.html)
+                {emojisArray.map( (emoji) => {
+                    return (
+                    <div className="emojiList">
+                        {emoji}
+                    </div>
+                    )
+                })
+            }
             </div>
         </div>
     );
